@@ -18,7 +18,11 @@ public class Test {
                 new ExecutiveApplicant("Igli", "Koxha")
         );
 
-        List<Employee> employees = applicants.stream().map(applicant -> applicant.createAccount().create(applicant)).collect(Collectors.toList());
+        List<Employee> employees = applicants.stream()
+                .map(applicant -> applicant
+                        .createAccount()
+                        .create(applicant))
+                .collect(Collectors.toList());
 
         for (Employee employee : employees) {
             System.out.println(String.format("%s %s: %s IsManager: %s IsExecutive: %s", employee.getFirstName(), employee.getLastName(), employee.getEmail(), employee.isManager(), employee.isExecutive()));
