@@ -5,4 +5,5 @@ import o.after.Accounts.CreateAccount;
 public interface Applicant {
     String getFirstName();
     String getLastName();
+    CreateAccount createAccount();
 }
