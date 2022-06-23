@@ -1,15 +1,11 @@
-package l.after;
+package l.after.Emp;
 
 public interface Employee {
-    String getFirstName();
     void setFirstName(String firstName);
-
-    String getLastName();
+    String getFirstName();
     void setLastName(String lastName);
-
-    double getSalary();
+    String getLastName();
     void setSalary(double salary);
-
+    double getSalary();
     void calculatePerHourRate(int rank);
-
 }

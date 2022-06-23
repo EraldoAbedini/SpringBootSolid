@@ -1,9 +1,9 @@
-package l.after;
+package l.after.Emp;
 
-public class Employer implements Employee {
-    private String firstName;
-    private String lastName;
-    private double salary;
+public class CreateEmployee implements Employee {
+    public String firstName;
+    public String lastName;
+    public double salary;
 
     @Override
     public String getFirstName() {
